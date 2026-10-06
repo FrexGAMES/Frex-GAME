@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#08090f">
+<meta name="description" content="FREX GAMER - Gamerlar için yardımcı uygulama">
+
+<title>FREX GAMER</title>
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#07080d;
+color:white;
+overflow-x:hidden;
+}
+
+body:before{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#5967ff22;
+filter:blur(100px);
+top:-200px;
+right:-150px;
+z-index:-1;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:25px;
+font-weight:900;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#6875ff;
+}
+
+.version{
+background:#151925;
+border:1px solid #2b3040;
+padding:7px 12px;
+border-radius:20px;
+font-size:12px;
+color:#9da5bb;
+}
+
+.hero{
+text-align:center;
+padding:70px 10px 55px;
+}
+
+.badge{
+display:inline-block;
+background:#6675ff18;
+border:1px solid #6675ff55;
+color:#8290ff;
+padding:8px 14px;
+border-radius:30px;
+font-size:12px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:52px;
+line-height:1;
+margin-bottom:18px;
+}
+
+.hero h1 span{
+color:#6d7aff;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+color:#9299ab;
+line-height:1.7;
+font-size:15px;
+}
+
+.download{
+display:inline-block;
+margin-top:28px;
+background:#6875ff;
+color:white;
+text-decoration:none;
+font-weight:900;
+padding:17px 30px;
+border-radius:15px;
+box-shadow:0 10px 35px #6675ff35;
+transition:.2s;
+}
+
+.download:hover{
+transform:translateY(-3px);
+}
+
+.info{
+margin-top:15px;
+font-size:11px;
+color:#666d80;
+}
+
+.sectionTitle{
+text-align:center;
+margin:35px 0 20px;
+font-size:25px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+}
+
+.feature{
+background:#10131c;
+border:1px solid #242a39;
+border-radius:20px;
+padding:23px;
+transition:.2s;
+}
+
+.feature:hover{
+border-color:#6675ff88;
+transform:translateY(-3px);
+}
+
+.icon{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.feature h3{
+font-size:16px;
+margin-bottom:8px;
+}
+
+.feature p{
+color:#858da2;
+font-size:13px;
+line-height:1.6;
+}
+
+.about{
+margin-top:18px;
+background:#10131c;
+border:1px solid #242a39;
+border-radius:22px;
+padding:25px;
+text-align:center;
+}
+
+.about p{
+color:#858da2;
+line-height:1.7;
+font-size:14px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin-top:18px;
+}
+
+.stat{
+background:#0b0e15;
+border:1px solid #252b39;
+border-radius:15px;
+padding:17px;
+}
+
+.stat b{
+display:block;
+font-size:20px;
+margin-bottom:5px;
+}
+
+.stat span{
+font-size:11px;
+color:#747c91;
+}
+
+footer{
+text-align:center;
+padding:45px 0 25px;
+color:#555d70;
+font-size:11px;
+}
+
+@media(max-width:600px){
+
+.container{
+padding:15px;
+}
+
+.hero{
+padding-top:55px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr 1fr 1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+FREX <span>GAMER</span>
+</div>
+
+<div class="version">
+v1.0
+</div>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="badge">
+🎮 GAMER TOOLKIT
+</div>
+
+<h1>
+FREX <span>GAMER</span>
+</h1>
+
+<p>
+Gamerlar için geliştirilmiş yardımcı uygulama.
+Aim Trainer, sensitivity hesaplama, oyun notları,
+performans kontrolü ve daha fazlası tek uygulamada.
+</p>
+
+<a
+class="download"
+href="#"
+onclick="downloadAPK()">
+📥 APK'YI İNDİR
+</a>
+
+<div class="info">
+Android • FREX GAMER v1.0
+</div>
+
+</section>
+
+
+<h2 class="sectionTitle">
+🔥 Özellikler
+</h2>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="icon">🎯</div>
+
+<h3>Aim Trainer</h3>
+
+<p>
+2 dakikalık aim antrenmanında rastgele hedefleri vur,
+isabet oranını ve 100 üzerinden AIM skorunu gör.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">⚡</div>
+
+<h3>Performance Check</h3>
+
+<p>
+Oyuna başlamadan önce cihazının performans hazırlığını
+hızlıca kontrol et.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">🎮</div>
+
+<h3>Sensitivity</h3>
+
+<p>
+DPI değişikliklerinde yaklaşık eşdeğer hassasiyet
+değerini hesapla.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">📝</div>
+
+<h3>Gaming Notes</h3>
+
+<p>
+PUBG, Roblox, Brawl Stars ve diğer oyunların ayarlarını
+telefonunda kaydet.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">🔊</div>
+
+<h3>Sound Check</h3>
+
+<p>
+Oyun, efekt ve sesli sohbet ayarlarını tek yerden
+kontrol et.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">📱</div>
+
+<h3>Device Info</h3>
+
+<p>
+Cihaz ve ekran bilgilerini uygulama üzerinden
+kontrol et.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="about">
+
+<h2>🚀 FREX GAMER</h2>
+
+<p>
+Oyun değil. Gamerların oyun deneyimini geliştirmek
+için kullanabileceği yardımcı araçlar.
+</p>
+
+
+<div class="stats">
+
+<div class="stat">
+<b>🎯</b>
+<span>AIM TRAINER</span>
+</div>
+
+<div class="stat">
+<b>⚡</b>
+<span>PERFORMANCE</span>
+</div>
+
+<div class="stat">
+<b>📝</b>
+<span>NOTLAR</span>
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+© 2026 FREX GAMER<br>
+Gamer Tools & Utilities
+
+</footer>
+
+</div>
+
+
+<script>
+
+function downloadAPK(){
+
+alert(
+"APK indirme bağlantısı henüz eklenmedi. APK dosyanı yükledikten sonra bu butonu gerçek indirme bağlantısına bağlayacağız."
+);
+
+}
+
+</script>
+
+</body>
+</html>
